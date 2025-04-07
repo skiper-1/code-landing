@@ -1,6 +1,9 @@
 <script setup>
 import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
 import Playlists from './Playlists.vue';
+import Prettier from './Prettier.vue';
+import Login from './Login.vue';
+import Register from './Register.vue';
 </script>
 
 <template>
@@ -195,4 +198,7 @@ import Playlists from './Playlists.vue';
     </div>
   </footer>
   <Playlists />
+  <Prettier />
+  <Register />
+  <Login />
 </template>
