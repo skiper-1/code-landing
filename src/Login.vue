@@ -3,12 +3,14 @@ import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
 </script>
 
 <template>
-  <main class="bg-gray-50 min-h-screen grid place-items-center">
+  <main class="bg-gray-50 min-h-screen">
     <section class="flex flex-col items-center justify-center gap-6 pt-5">
       <a href="#">
         <CodeBracketSquareIcon class="size-16 text-indigo-500 -rotate-6" />
       </a>
-      <div class="border border-gray-300 rounded-lg bg-white p-6">
+      <div
+        class="border border-gray-300 w-full sm:w-fit rounded-lg bg-white p-6"
+      >
         <form action="" class="flex flex-col gap-6">
           <div class="flex flex-col gap-1">
             <label for="email">Email</label>

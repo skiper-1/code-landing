@@ -3,8 +3,10 @@ import {
   CodeBracketSquareIcon,
   Bars3Icon,
   XMarkIcon,
-  GlobeAltIcon,
-  CodeBracketIcon,
+  Cog6ToothIcon,
+  FireIcon,
+  PuzzlePieceIcon,
+  PaperAirplaneIcon,
 } from '@heroicons/vue/24/solid';
 </script>
 
@@ -80,85 +82,124 @@ import {
       </div>
     </div>
   </header>
-
   <main>
+    <section class="pt-20 pb-10 sm:pt-28 sm:pb-48">
+      <div
+        class="container flex flex-col items-center gap-x-8 lg:flex-row mx-auto"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-3xl sm:text-5xl font-black tracking-tight">
+            Your
+            <span
+              class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent"
+              >VS Code</span
+            >
+
+            Boost
+          </h1>
+          <p
+            class="mt-2 sm:mt-4 px-10 sm:px-0 text-center sm:text-left text-lg text-gray-600"
+          >
+            Unlock your coding potential with tailored settings, shortcuts, and
+            expert tutorials.
+          </p>
+          <div class="mt-6 sm:mt-8 flex gap-x-2">
+            <a
+              href=""
+              class="px-6 py-2 sm:px-8 sm:py-3 text-lg font-semibold rounded-lg bg-indigo-600 text-indigo-50 hover:bg-indigo-700"
+              >Explore</a
+            >
+            <a
+              href=""
+              class="px-6 py-2 sm:px-8 sm:py-3 text-lg font-semibold rounded-lg bg-gray-100 text-gray-900 hover:bg-gray-200"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="relative w-2/3 mt-5 lg:mt-0">
+          <div class="hero-reflection"></div>
+          <img src="/img.png" alt="Editor UI" class="hero-image" />
+        </div>
+      </div>
+    </section>
     <section
-      class="flex flex-col pt-24 pb-6 sm:py-16 sm:gap-y-12 gap-y-8 container mx-auto"
+      class="bg-gray-100 flex flex-col gap-8 py-8 lg:py-8 sm:gap-12"
+      id="features"
     >
-      <div>
-        <h1 class="text-center text-5xl font-bold">Prettier</h1>
-        <p class="text-center">
-          Automatically format your code to ensure style across your project.
+      <div class="container mx-auto max-w-screen-sm">
+        <h2 class="text-center font-bold sm:text-4xl text-2xl">
+          Unlock the full potential
+        </h2>
+        <p class="text-center mt-1 sm:mt-2 font-extralight sm:text-lg">
+          With tailored settings, keyboard shortcuts, and powerfull extensions,
+          you can work smarter and faster.
         </p>
       </div>
-      <div class="container mx-auto grid sm:grid-cols-3 grid-cols-1 gap-x-8">
-        <div class="col-span-1 flex flex-col gap-y-4 px-4">
-          <div class="flex justify-between items-center gap-x-4">
-            <h3 class="font-semibold text-lg">Lessons</h3>
-            <div class="flex">
-              <a href="#" target="_blank" class="hover:text-indigo-500"
-                ><GlobeAltIcon class="sm:size-8 size-6"
-              /></a>
-              <a href="#" taget="_blank" class="hover:text-indigo-500"
-                ><CodeBracketIcon class="sm:size-8 size-6"
-              /></a>
-            </div>
-          </div>
-          <ul>
-            <li>
-              <a
-                href="#"
-                class="flex justify-between bg-indigo-50 rounded text-indigo-500 w-full p-3 gap-4"
-                ><span class="truncate">1. Getting started with Prettier </span>
-                <span>5:30</span>
-              </a>
-            </li>
-            <li class="flex gap-5">
-              <a
-                href="#"
-                class="flex justify-between w-full p-3 gap-4 hover:bg-gray-100 rounded"
-                ><span class="truncate">2. Advanced GitLens Features </span>
-                <span>6:30</span>
-              </a>
-            </li>
-            <li class="flex gap-5">
-              <a
-                href="#"
-                class="flex justify-between w-full p-3 gap-4 hover:bg-gray-100 rounded"
-                ><span class="truncate"> 3. Debugging with ESLint </span>
-                <span>7:30</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-span-2 px-4 sm:px-0">
-          <iframe
-            class="rounded-lg aspect-video w-full h-fit"
-            width="886"
-            height="498"
-            src="https://www.youtube.com/embed/Zvd_iyYWF1E?list=PL-FhWbGlJPfad98AQLf-VP_vn_GRJR58T"
-            title="VS Code | Минималистичная настройка 2025 (1/11) - Цветовая тема и интерфейс"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <article class="prose">
-            <header>
-              <h3 class="pt-5 pb-3 text-lg font-bold">
-                Getting started with prettier
-              </h3>
-              <p>
-                Prettier is an opinionated code formatter that automatically
-                formats your code for consistency and readability. It supports
-                many languages like JavaScript, TypeScript, HTML, CSS, and more.
-                With Prettier, you don’t need to worry about style debates or
-                messy code. Just save your file, and it formats everything for
-                you. It's a must-have tool for clean and professional codebases.
-              </p>
+      <div class="grid lg:grid-cols-3 gap-5 sm:gap-8 sm:px-20 px-4">
+        <a href="#">
+          <article
+            class="hover:border-indigo-500 bg-white rounded-xl border border-gray-200 p-4 h-full"
+          >
+            <header class="flex flex-col gap-3">
+              <Cog6ToothIcon class="sm:size-12 size-10 text-indigo-500" />
+              <h3 class="font-bold">Settings</h3>
             </header>
+            <p class="font-extralight mb-1 text-lg text-gray-500">
+              Personalize your workspace to math your unique coding style and
+              preferences effortlessly.
+            </p>
           </article>
-        </div>
+        </a>
+        <a href="#">
+          <article
+            class="hover:border-indigo-500 bg-white rounded-xl border border-gray-200 p-6 h-full"
+          >
+            <header class="flex flex-col gap-3">
+              <FireIcon class="sm:size-12 size-10 text-indigo-500" />
+              <h3 class="font-bold">Keyboard Shorcuts</h3>
+            </header>
+            <p class="font-extralight mb-1 text-lg text-gray-500">
+              Streamline your workflow with essentioal shortcuts that save you
+              time and boost your skills.
+            </p>
+          </article>
+        </a>
+        <a href="#">
+          <article
+            class="hover:border-indigo-500 bg-white rounded-xl border border-gray-200 p-6 h-full"
+          >
+            <header class="flex flex-col gap-3">
+              <PuzzlePieceIcon class="sm:size-12 size-10 text-indigo-500" />
+              <h3 class="font-bold">Exetensions</h3>
+            </header>
+            <p class="font-extralight mb-1 text-lg text-gray-500">
+              Expand your capabilities with powerfull wxtensions tailored to
+              enhance your coding experirnce.
+            </p>
+          </article>
+        </a>
+      </div>
+    </section>
+    <section class="container mx-auto sm:py-16 py-8">
+      <h2 class="text-center font-bold sm:text-4xl text-2xl">Stay Updated</h2>
+      <p class="text-center font-extralight mt-1 px-10 text-gray-500">
+        Subscribe to our newsletters for the latest updates and tips.
+      </p>
+      <div class="container">
+        <form class="flex justify-center gap-4 mt-5">
+          <input
+            type="email"
+            class="border border-gray-500 rounded-xl w-1/2 px-3 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 shadow-sm"
+            placeholder="Your Email"
+          />
+          <button
+            class="bg-indigo-500 px-6 py-2 rounded-xl text-indigo-100 hover:bg-indigo-600"
+          >
+            <PaperAirplaneIcon class="block sm:hidden size-5" />
+            <span class="hidden sm:inline">Subscribe</span>
+          </button>
+        </form>
       </div>
     </section>
   </main>

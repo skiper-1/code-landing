@@ -7,7 +7,7 @@
   }
 
   .hero-reflection {
-    @apply absolute inset-0 rounded-3xl top-10 left-10 bg-gradient-to-br from-pink-300 to-blue-500;
+    @apply absolute inset-0 rounded-3xl top-5 left-5 bg-gradient-to-br from-pink-300 to-blue-500;
     transform: scale(1.1) rotateX(5deg) rotateY(-10deg) rotateZ(2deg);
   }
 }
