@@ -13,7 +13,7 @@ export default defineConfig({
     tailwindcss(),
     ViteImageOptimizer({
       png: {
-        quality: 100,
+        quality: 50,
       },
     }),
   ],

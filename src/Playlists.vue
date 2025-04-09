@@ -8,7 +8,7 @@ import {
 
 <template>
   <header
-    class="flex justify-center p-2 sm:py-4 fixed top-0 inset-x-0 sm:static z-10 border-b sm:border-0 bg-white dark:bg-gray-900"
+    class="fixed top-0 inset-x-0 sm:static z-10 border-b-4 border-gray-300 bg-indigo-50 dark:bg-gray-900 dark:border-gray-700"
   >
     <div class="container flex items-center justify-between gap-10">
       <a href="#" class="flex items-center gap-1 sm:gap-2">
@@ -47,7 +47,7 @@ import {
       <div class="flex sm:hidden">
         <nav
           id="nav"
-          class="absolute inset-x-0 bg-white border-b rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-700"
+          class="absolute inset-x-0 bg-white border-b-4 border-gray-300 rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-900 dark:border-gray-700"
         >
           <ul class="flex flex-col items-center gap-2 px-3 py-3">
             <li class="w-full">
@@ -91,9 +91,9 @@ import {
 
   <main>
     <section
-      class="flex flex-col pt-24 pb-6 sm:py-16 sm:gap-y-12 gap-y-8 dark:bg-gray-800 dark:text-white"
+      class="container flex flex-col pt-30 pb-6 sm:py-16 sm:gap-y-12 gap-y-8 dark:bg-gray-800 dark:text-white"
     >
-      <div class="container mx-auto max-w-screen-sm">
+      <div class="mx-auto max-w-screen-sm">
         <h1
           class="text-4xl sm:text-5xl font-black text-center dark:text-indigo-200"
         >
@@ -104,9 +104,7 @@ import {
           and tutorials.
         </p>
       </div>
-      <div
-        class="container mx-auto grid sm:grid-cols-3 gap-y-4 grid-cols-1 sm:gap-8"
-      >
+      <div class="grid sm:grid-cols-3 gap-y-4 grid-cols-1 sm:gap-8">
         <div class="sm:col-span-1 flex flex-col gap-y-6">
           <input
             type="search"
@@ -172,19 +170,15 @@ import {
                   Formatting
                 </button>
               </li>
-              <li>
-                <button
-                  class="w-full px-3 py-2 text-left text-sm rounded-xl hover:bg-gray-300 dark:hover:bg-teal-700"
-                >
-                  Collaboration
-                </button>
+              <li
+                class="w-full px-3 py-2 text-left text-sm rounded-xl hover:bg-gray-300 dark:hover:bg-teal-700"
+              >
+                Collaboration
               </li>
-              <li>
-                <button
-                  class="w-full px-3 py-2 text-left text-sm rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700"
-                >
-                  Documentation
-                </button>
+              <li
+                class="w-full px-3 py-2 text-left text-sm rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700"
+              >
+                Documentation
               </li>
             </ul>
           </div>
@@ -206,12 +200,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Utility
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Formatting
                   </li>
@@ -234,12 +228,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Collaboration
                   </li>
@@ -262,12 +256,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Collaboration
                   </li>
@@ -290,12 +284,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Debugging
                   </li>
@@ -318,12 +312,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Utility
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
@@ -334,7 +328,7 @@ import {
 
           <a href="#">
             <article
-              class="flex flex-col h-full border border-gray-300 rounded-xl p-6 hover:border-indigo-600 dark:border-indigo-600 dark:hover:border-blue-600"
+              class="flex flex-col h-full border border-gray-300 rounded-xl p-6 hover:border-indigo-600 dark:border-indigo-600 dark:hover:border-blue-300"
             >
               <header>
                 <h3 class="font-semibold text-lg">REST Client</h3>
@@ -346,12 +340,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Utility
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
@@ -374,12 +368,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Utility
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Documentation
                   </li>
@@ -390,7 +384,7 @@ import {
 
           <a href="#">
             <article
-              class="flex flex-col h-full border border-gray-300 rounded-xl p-6 hover:border-indigo-600 dark:border-indigo-600 dark:hover:border-gray-600"
+              class="flex flex-col h-full border border-gray-300 rounded-xl p-6 hover:border-indigo-600 dark:border-indigo-600 dark:hover:border-pink-600"
             >
               <header>
                 <h3 class="font-semibold text-lg">Docker</h3>
@@ -401,12 +395,12 @@ import {
               <footer class="mt-auto">
                 <ul class="flex gap-2 flex-wrap">
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Development
                   </li>
                   <li
-                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600"
+                    class="bg-indigo-100 rounded-xl px-3 py-1 text-indigo-600 dark:bg-indigo-600 dark:text-white"
                   >
                     Integration
                   </li>
@@ -419,7 +413,7 @@ import {
     </section>
   </main>
   <footer
-    class="bg-indigo-600 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-indigo-900"
+    class="container bg-indigo-900 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-gray-900"
   >
     <div class="flex items-center flex-col sm:flex-row sm:gap-8 gap-6">
       <div class="sm:w-1/2 p-2 flex flex-col gap-5">

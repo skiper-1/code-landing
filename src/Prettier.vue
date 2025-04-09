@@ -10,7 +10,7 @@ import {
 
 <template>
   <header
-    class="flex justify-center p-2 sm:py-4 fixed top-0 inset-x-0 sm:static z-10 border-b sm:border-0 bg-white dark:bg-gray-900"
+    class="fixed top-0 inset-x-0 sm:static z-10 border-b-4 border-gray-300 bg-indigo-50 dark:bg-gray-900 dark:border-gray-700"
   >
     <div class="container flex items-center justify-between gap-10">
       <a href="#" class="flex items-center gap-1 sm:gap-2">
@@ -49,7 +49,7 @@ import {
       <div class="flex sm:hidden">
         <nav
           id="nav"
-          class="absolute inset-x-0 bg-white border-b rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-700"
+          class="absolute inset-x-0 bg-white border-b-4 border-gray-300 rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-900 dark:border-gray-700"
         >
           <ul class="flex flex-col items-center gap-2 px-3 py-3">
             <li class="w-full">
@@ -90,10 +90,9 @@ import {
       </div>
     </div>
   </header>
-
   <main>
     <section
-      class="flex flex-col pt-24 pb-6 sm:py-16 sm:gap-y-12 gap-y-8 dark:bg-gray-800 dark:text-white"
+      class="container flex flex-col pt-24 pb-6 sm:py-16 sm:gap-y-12 gap-y-8 dark:bg-gray-800 dark:text-white"
     >
       <div>
         <h1 class="text-center text-5xl font-bold">Prettier</h1>
@@ -101,8 +100,8 @@ import {
           Automatically format your code to ensure style across your project.
         </p>
       </div>
-      <div class="container mx-auto grid sm:grid-cols-4 grid-cols-1 sm:px-10">
-        <div class="col-span-1 flex flex-col gap-y-4 px-4">
+      <div class="grid sm:grid-cols-5 grid-cols-1 sm:px-10">
+        <div class="col-span-2 flex flex-col gap-y-4 px-4">
           <div class="flex justify-between items-center gap-x-4">
             <h3 class="font-semibold text-lg">Lessons</h3>
             <div class="flex">
@@ -173,7 +172,7 @@ import {
     </section>
   </main>
   <footer
-    class="bg-indigo-600 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-indigo-900"
+    class="container bg-indigo-900 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-gray-900"
   >
     <div class="flex items-center flex-col sm:flex-row sm:gap-8 gap-6">
       <div class="sm:w-1/2 p-2 flex flex-col gap-5">

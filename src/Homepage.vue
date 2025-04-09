@@ -12,7 +12,7 @@ import {
 
 <template>
   <header
-    class="flex justify-center p-2 sm:py-4 fixed top-0 inset-x-0 sm:static z-10 border-b sm:border-0 bg-white dark:bg-gray-900"
+    class="fixed top-0 inset-x-0 sm:static z-10 border-b-4 border-gray-300 bg-indigo-50 dark:bg-gray-900 dark:border-gray-700"
   >
     <div class="container flex items-center justify-between gap-10">
       <a href="#" class="flex items-center gap-1 sm:gap-2">
@@ -51,7 +51,7 @@ import {
       <div class="flex sm:hidden">
         <nav
           id="nav"
-          class="absolute inset-x-0 bg-white border-b rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-700"
+          class="absolute inset-x-0 bg-white border-b-4 border-gray-300 rounded-b-xl sm:border-0 top-full hidden target:block peer dark:bg-gray-900 dark:border-gray-700"
         >
           <ul class="flex flex-col items-center gap-2 px-3 py-3">
             <li class="w-full">
@@ -93,10 +93,8 @@ import {
     </div>
   </header>
   <main>
-    <section class="pt-20 pb-10 sm:pt-28 sm:pb-48 dark:bg-gray-800">
-      <div
-        class="container flex flex-col items-center gap-x-8 lg:flex-row mx-auto"
-      >
+    <section class="pt-24 pb-10 sm:pt-28 sm:pb-48 dark:bg-gray-800">
+      <div class="container flex flex-col items-center gap-x-8 lg:flex-row">
         <div class="flex flex-col justify-center items-center">
           <h1
             class="text-3xl sm:text-5xl font-black tracking-tight dark:text-indigo-200"
@@ -129,28 +127,28 @@ import {
             </a>
           </div>
         </div>
-        <div class="relative w-2/3 mt-5 lg:mt-0">
+        <div class="relative w-2/3 mt-5 lg:mt-0 perspective-midrange">
           <div
-            class="absolute -inset-2 rounded-xl top-10 left-10 bg-gradient-to-bl from-pink-300 to-blue-500 dark:from-gray-500 dark:to-gray-600 -rotate-z-3"
+            class="absolute -inset-2 rounded-xl top-10 left-10 bg-gradient-to-l from-pink-300 to-blue-500 dark:from-violet-900 dark:to-indigo-600 rotate-z-3"
           ></div>
           <img
             src="/code_light.png"
             alt="Editor UI"
-            class="rounded-2xl -rotate-z-3 pt-5 dark:hidden block"
+            class="rounded-2xl rotate-z-3 pt-5 dark:hidden block"
           />
           <img
             src="/code_dark.png"
             alt="Editor UI"
-            class="rounded-2xl -rotate-z-3 pt-5 hidden dark:block"
+            class="rounded-2xl rotate-z-3 pt-5 hidden dark:block"
           />
         </div>
       </div>
     </section>
     <section
-      class="bg-gray-100 flex flex-col gap-8 py-8 lg:py-8 sm:gap-12 dark:bg-gray-900"
+      class="container bg-gray-100 flex flex-col gap-8 py-8 lg:py-8 sm:gap-12 dark:bg-gray-900"
       id="features"
     >
-      <div class="container mx-auto max-w-screen-sm">
+      <div class="mx-auto max-w-screen-sm">
         <h2
           class="text-center font-bold sm:text-4xl text-2xl dark:text-indigo-100"
         >
@@ -209,17 +207,17 @@ import {
       </div>
     </section>
     <section
-      class="flex flex-col items-center sm:py-16 py-8 dark:bg-gray-700 dark:text-white"
+      class="flex flex-col items-center sm:py-16 py-8 dark:bg-gray-800 dark:text-white"
     >
       <h2 class="text-center font-bold sm:text-4xl text-2xl">Stay Updated</h2>
       <p class="text-center font-extralight mt-1 px-10">
         Subscribe to our newsletters for the latest updates and tips.
       </p>
-      <div class="container">
+      <div>
         <form class="flex justify-center gap-4 mt-5">
           <input
             type="email"
-            class="border border-gray-500 rounded-xl w-1/2 px-3 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-0"
+            class="border border-gray-500 rounded-xl w-100 px-3 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-0"
             placeholder="Your Email"
           />
           <button
@@ -233,7 +231,7 @@ import {
     </section>
   </main>
   <footer
-    class="bg-indigo-600 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-indigo-900"
+    class="container bg-indigo-900 text-white font-extralight py-2 sm:pt-10 sm:px-4 dark:bg-gray-900"
   >
     <div class="flex items-center flex-col sm:flex-row sm:gap-8 gap-6">
       <div class="sm:w-1/2 p-2 flex flex-col gap-5">

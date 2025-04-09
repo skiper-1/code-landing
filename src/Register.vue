@@ -3,13 +3,15 @@ import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
 </script>
 
 <template>
-  <main class="bg-gray-50 min-h-screen dark:bg-gray-800 dark:text-white">
-    <section class="flex flex-col items-center justify-center gap-6 pt-5">
+  <main>
+    <section
+      class="flex flex-col items-center gap-6 pt-5 bg-gray-50 min-h-screen dark:bg-gray-800 dark:text-white"
+    >
       <a href="#">
         <CodeBracketSquareIcon class="size-16 text-indigo-500 -rotate-6" />
       </a>
       <div
-        class="border border-gray-300 w-full sm:w-fit rounded-lg bg-white p-6 dark:bg-gray-700 dark:border-none"
+        class="border border-gray-300 w-full sm:w-fit rounded-lg bg-white p-6 dark:bg-gray-900 dark:border-none"
       >
         <form action="" class="flex flex-col gap-6">
           <div class="flex flex-col gap-1">
@@ -17,7 +19,8 @@ import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
             <input
               type="email"
               id="email"
-              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 focus:ring-1 outline-none dark:border-gray-600"
+              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 outline-none dark:border-gray-600"
+              placeholder="Enter email"
             />
           </div>
           <div class="flex flex-col">
@@ -25,7 +28,8 @@ import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
             <input
               type="password"
               id="password"
-              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 focus:ring-1 outline-none dark:border-gray-600"
+              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 outline-none dark:border-gray-600"
+              placeholder="Enter password"
             />
           </div>
           <div class="flex flex-col">
@@ -33,7 +37,8 @@ import { CodeBracketSquareIcon } from '@heroicons/vue/24/solid';
             <input
               type="password"
               id="passwordConfirmation"
-              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 focus:ring-1 outline-none dark:border-gray-600"
+              class="border rounded-lg border-gray-300 px-4 py-2 focus:border-indigo-500 outline-none dark:border-gray-600"
+              placeholder="Enter password"
             />
           </div>
           <button
